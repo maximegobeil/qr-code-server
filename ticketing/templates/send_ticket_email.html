@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Confirmation de commande</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 20px;
+      }
+      .container {
+        max-width: 600px;
+        margin: auto;
+        background: #f9f9f9;
+        padding: 20px;
+        border-radius: 10px;
+      }
+      h1 {
+        color: #333;
+      }
+      p {
+        margin-bottom: 15px;
+      }
+      .footer {
+        margin-top: 20px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Bonjour, {{ name }}</h1>
+      <p>
+        Merci d'avoir effectué le paiement pour l'événement du 14 juin "Beach
+        Party!".
+      </p>
+      <p>Voici les détails de votre commande :</p>
+      <ul>
+        <li><strong>Montant total payé :</strong> {{ total_amount }}$ CAD</li>
+        <li><strong>Nombre de Billet : {{ nb }}</strong></li>
+      </ul>
+      <p>
+        Veuillez trouver en pièce jointe le(s) billet(s) à présenter afin
+        d'entrer dans la salle le jour de l'événement.
+      </p>
+      <p>
+        Les billets ont un code unique, il est donc important de ne pas les
+        partager.
+      </p>
+      <p>
+        L'événement aura lieu le 14 juin 2024 à partir de 20h00 jusqu'à 1h00, et
+        se déroulera au 725 Boul. Louis Fréchette, Nicolet, QC, J3T 1L6.
+      </p>
+      <p>
+        Cet événement "Beach Party!", est réservé aux personnes âgées de 14 ans
+        et plus.
+      </p>
+      <p>
+        Pour toute question ou assistance supplémentaire, n'hésitez pas à nous
+        contacter à
+        <a href="mailto:lesproductions725@gmail.com"
+          >lesproductions725@gmail.com</a
+        >.
+      </p>
+      <div class="footer">
+        <p>Merci encore et au plaisir de vous voir à l'événement !</p>
+        <p>L'équipe de Les Productions 725</p>
+      </div>
+    </div>
+  </body>
+</html>

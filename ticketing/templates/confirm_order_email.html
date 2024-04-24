@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Confirmation de commande</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 20px;
+      }
+      .container {
+        max-width: 600px;
+        margin: auto;
+        background: #f9f9f9;
+        padding: 20px;
+        border-radius: 10px;
+      }
+      h1 {
+        color: #333;
+      }
+      p {
+        margin-bottom: 15px;
+      }
+      .footer {
+        margin-top: 20px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Bonjour, {{ name }}</h1>
+      <p>
+        Nous vous remercions d'avoir passé une commande auprès de Les
+        Productions 725.
+      </p>
+      <p>Voici les détails de votre commande :</p>
+      <ul>
+        <li><strong>Nombre de billet :</strong> {{ nb }}</li>
+        <li><strong>Montant à payer :</strong> {{ total_amount }}$ CAD</li>
+      </ul>
+      <p>
+        Pour finaliser votre commande, veuillez effectuer un transfert Interac
+        e-Transfer à l'adresse suivante :
+        <strong>lesproductions725@gmail.com</strong>
+      </p>
+      <p>
+        Une fois votre paiement reçu, vous recevrez votre billet électronique
+        par e-mail dans les 48 heures.
+      </p>
+      <p>Voici quelques détails sur l'événement :</p>
+      <ul>
+        <li><strong>Nom de l'événement :</strong> Beach Party</li>
+        <li>
+          <strong>Date et heure :</strong> 14 juin 2024, de 20h00pm à 1h00am
+        </li>
+        <li>
+          <strong>Lieu :</strong> 725 Boul. Louis Fréchette, Nicolet, QC, J3T
+          1L6
+        </li>
+        <li><strong>Âge minimum :</strong> 14 ans et plus</li>
+      </ul>
+      <p>
+        Pour toute question ou assistance supplémentaire, n'hésitez pas à nous
+        contacter à
+        <a href="mailto:lesproductions725@gmail.com"
+          >lesproductions725@gmail.com</a
+        >.
+      </p>
+      <div class="footer">
+        <p>Merci encore et au plaisir de vous voir à l'événement !</p>
+        <p>L'équipe de Les Productions 725</p>
+      </div>
+    </div>
+  </body>
+</html>
